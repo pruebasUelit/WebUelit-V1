@@ -1,0 +1,147 @@
+<div id="cacaDeVaca">
+    <div class="container">
+        <h1 class="clsServicios"><strong>Servicios</strong></h1>
+
+        <div class="row">
+            <div class="col-md-4" *ngFor="let item of servicios, index as i">
+                <div class="card" id="rowCard">
+                    <a class="nav-link nav-link" routerLinkActive='active' [routerLink]="['/serviciosDes',i]">
+                        <!-- <a class="nav-link nav-link" routerLinkActive='active' [routerLink]="['/serviciosDes']"> -->
+                        <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+                        <div>
+                            <h5 class="nameServicio"><strong>{{item.titulo}}</strong></h5>
+                            <br>
+                            <p class="justificar">
+                                {{item.resumen}}
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--++++++++++++++++++++++++++++++++++++++++++ Servicio 6 +++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="col-md-4">
+                <a class="nav-link nav-link" href="https://www.odoo.com/es_ES/partners/integracion-de-servicios-en-ti-uelit-sa-de-cv-1708530?country_id=150" target="_blank">
+                    <div class="card" id="rowCard">
+                        <img class="card-img-top" src="../assets/servicios/odoo.png" alt="Card image cap">
+                        <div>
+                            <h5 class="nameServicio"><strong>ERP (Odoo)</strong></h5>
+                            <br>
+                            <p class="justificar">
+                                Socio de negocios de ODOO
+                                <br> <strong>Una Propuesta de Valor Exclusivo</strong>
+                                <br> Todo lo que necesita en una experiencia de usuario de primera categoría.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- *****************************************Renglon de Servicios 1*********************************************** -->
+        <!-- <div class="row"> -->
+        <!--++++++++++++++++++++++++++++++++++++++++++ Servicio 1 +++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- <div class="col-md-4">
+            <a class="nav-link nav-link" routerLinkActive='active' [routerLink]="['/serviciosDes/#fabricaDeSw']">
+                <div class="card" id="rowCard">
+                    <img class="card-img-top" src="../assets/servicios/settings.png" alt="Card image cap">
+                    <div>
+                        <h5 class="nameServicio"><strong>Fabrica de Software (Desarrollo y Testing)</strong></h5>
+                        <br>
+                        <p class="justificar">
+                            Basada en la continua actualización y especialización Metodológica, Tecnológica y Humana, sumamos capacidad de operación.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div> -->
+
+        <!--++++++++++++++++++++++++++++++++++++++++++ Servicio 2 +++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- <div class="col-md-4">
+            <a class="nav-link nav-link" routerLinkActive='active' [routerLink]="['/serviciosDes']">
+                <div class="card" id="rowCard">
+                    <img class="card-img-top" src="../assets/servicios/hiring.png" alt="Card image cap">
+                    <div>
+                        <h5 class="nameServicio"><strong>Outsourcing de Personal (Staffing)</strong></h5>
+                        <br>
+                        <p class="justificar">
+                            Encontrar el personal adecuado no siempre es tarea fácil, seleccionar las personas idóneas significa el éxito del proyecto.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div> -->
+
+        <!--++++++++++++++++++++++++++++++++++++++++++ Servicio 3 +++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- <div class="col-md-4">
+            <a class="nav-link nav-link" routerLinkActive='active' [routerLink]="['/serviciosDes']">
+                <div class="card" id="rowCard">
+                    <img class="card-img-top" src="../assets/servicios/development.png" alt="Card image cap">
+                    <div>
+                        <h5 class="nameServicio"><strong>Desarrollo de Software a Medida</strong></h5>
+                        <br>
+                        <p class="justificar">
+                            Desarrollamos software a medida en ambientes Web, escritorio, móvil. Servicios bajo variadas tecnologías y frameworks.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div> -->
+
+        <!--*****************************************Renglon de Servicios 2**********************************************-->
+        <!-- <div class="row"> -->
+        <!--++++++++++++++++++++++++++++++++++++++++++ Servicio 4 +++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- <div class="col-md-4">
+            <a class="nav-link nav-link" routerLinkActive='active' [routerLink]="['/serviciosDes']">
+                <div class="card" id="rowCard">
+                    <img class="card-img-top" src="../assets/servicios/software.png" alt="Card image cap">
+                    <div>
+                        <h5 class="nameServicio"><strong>Desarrollo de Software por Proyectos a Precio Cerrado</strong></h5>
+                        <br>
+                        <p class="justificar">
+                            Desarrollo de aplicaciones con un estricto control en el seguimiento de las actividades para cumplir con oportunidad y Calidad.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div> -->
+
+        <!--++++++++++++++++++++++++++++++++++++++++++ Servicio 5 +++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- <div class="col-md-4">
+            <a class="nav-link nav-link" routerLinkActive='active' [routerLink]="['/serviciosDes']">
+                <div class="card" id="rowCard">
+                    <img class="card-img-top" src="../assets/servicios/consulting.png" alt="Card image cap">
+                    <div>
+                        <h5 class="nameServicio"><strong>Consultoria</strong></h5>
+                        <br>
+                        <p class="justificar">
+                            Servicios de Consultoría integral en tecnologías y análisis de negocios. Evaluación de la situación de su Empresa mediante
+                            un diagnóstico inicial.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div> -->
+
+        <!--++++++++++++++++++++++++++++++++++++++++++ Servicio 6 +++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- <div class="col-md-4">
+                <a class="nav-link nav-link" routerLinkActive='active' [routerLink]="['/serviciosDes']">
+                    <div class="card" id="rowCard">
+                        <img class="card-img-top" src="../assets/servicios/odoo.png" alt="Card image cap">
+                        <div>
+                            <h5 class="nameServicio"><strong>ERP (Odoo)</strong></h5>
+                            <br>
+                            <p class="justificar">
+                                Socio de negocios de ODOO
+                                <br> <strong>Una Propuesta de Valor Exclusivo</strong>
+                                <br> Todo lo que necesita en una experiencia de usuario de primera categoría.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div> -->
+
+    </div>
+</div>

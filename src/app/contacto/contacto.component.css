@@ -1,0 +1,27 @@
+#contacto {
+    margin-top: 3em;
+}
+
+#centarTexto {
+    text-align: center;
+    margin-top: 2em;
+}
+
+textarea {
+    height: 8em;
+}
+
+#botones {
+    margin-top: 2em;
+}
+
+button {
+    position: relative;
+    float: right;
+    width: 30%;
+}
+
+.g-recaptcha {
+    position: relative;
+    float: right;
+}

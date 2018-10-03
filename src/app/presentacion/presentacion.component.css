@@ -1,0 +1,33 @@
+#presentacion {
+    width: 100%;
+    height: 70vh;
+}
+
+.imgFondo {
+    width: 100%;
+    height: 70vh;
+    opacity: .65;
+
+}
+
+.carousel-caption {
+    /* color: rgb(4, 4, 105); */
+    color: #043469;
+    margin-bottom: 6em;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+        /* margin-bottom: 1em;   */
+    }
+
+    h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+}

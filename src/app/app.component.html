@@ -1,0 +1,92 @@
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++ nav ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu">
+  <a class="navbar-brand" [routerLink]="['/']"><img src="../assets/img/logo.png" alt="LogoUelit" class="rounded"></a>
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"> </span>
+  </button>
+  <div class="collapse navbar-collapse" [ngClass]="{'show': navbarOpen}">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <form class="navbar-nav mr-right" id="formulario">
+      <a class="nav-link nav-link" routerLinkActive='active' [routerLink]="['/']">Inicio</a>
+      <!-- <a class="nav-link nav-link" routerLinkActive='active' [routerLink]="['./servicios']">Servicios</a> -->
+      <!-- <a class="nav-link nav-link" routerLinkActive='active' [routerLink]="['/serviciosDes']">ServiciosDes</a> -->
+      <a class="nav-link nav-link" routerLinkActive='active' href="/#servicios">Servicios</a>
+      <!-- <a class="nav-link nav-link" routerLinkActive='active' href="/#nosotrosDes">Nosotros</a> -->
+      <a class="nav-link nav-link" routerLinkActive='active' [routerLink]="['/nosotrosDes']">Nosotros</a>
+      <a class="nav-link nav-link" routerLinkActive='active' href="/#contacto">Contacto</a>
+    </form>
+  </div>
+</nav>
+
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++ FinNav +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<router-outlet></router-outlet>
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++ Contacto ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<section>
+  <div class="col-md-12">
+    <h3>
+      Hagamos juntos cosas increíbles
+      <a href="mailto:info@uelit.com.mx?subject=Solicitud%20Uelit" data-ix="fadeinbtn" style="margin-left: 3em;" class="btn btn-outline-info">Contáctanos</a>
+    </h3>
+  </div>
+</section>
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++ End Contacto ++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++ Footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<footer>
+  <div class="container">
+    <!-- <a class="nav-link nav-link" routerLinkActive='active' href="/#menu" title="To Top">
+      <span>
+        <i class="far fa-arrow-alt-to-top"></i>
+      </span>
+    </a> -->
+
+    <div class="row" id="renglonInfo">
+
+      <div class="col-md-4">
+        <h6>Oficina Querétaro, Matriz</h6>
+        <p>
+          Av. Zaragoza No. 279 Despacho 207
+          <br> Col. Centro, Santiago de Querétaro, Qro.
+          <br> Teléfono (+52) (01 442) 193 5289, 375 8956
+          <br> Correo electrónico: info@uelit.com.mx
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <h6>Oficina Operativa Querétaro</h6>
+        <p>
+          Av. Pie de la Cuesta No. 104 Despacho 237
+          <br> Col. Desarrollo San Pablo, Santiago de Querétaro, Qro.
+          <br> Teléfono (+52) (01 442) 538 9664
+          <br> Correo electrónico: info@uelit.com.mx
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <h6>Oficina CDMX</h6>
+        <p>
+          Miguel Laurent No. 15 Bis, Despacho 404
+          <br> Col. Del Valle, Del. Benito Juárez DF. C.P. 03104
+          <br> Correo electrónico: info@uelit.com.mx
+        </p>
+      </div>
+    </div>
+
+    <div class="row" id="renglonInfo" style="justify-content: center;">
+      © 2018 Copyright: <a>UELiT IT </a>
+    </div>
+
+  </div>
+</footer>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++ Footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
